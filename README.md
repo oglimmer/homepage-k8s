@@ -1,4 +1,4 @@
-# Homepage: https://oglimmer.github.io/homepage-k8s/
+# Homepage
 
 This repo builds the https://oglimmer.github.io/homepage-k8s/ web page.
 
