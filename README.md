@@ -1,6 +1,6 @@
-# Homepage: oglimmer.com
+# Homepage: https://oglimmer.github.io/homepage-k8s/
 
-This repo builds the https://www.oglimmer.com web page.
+This repo builds the https://oglimmer.github.io/homepage-k8s/ web page.
 
 It's technicaly based on Boostrap 5 and Nuxt 3 using a static build.
 
