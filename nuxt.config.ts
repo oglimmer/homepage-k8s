@@ -10,5 +10,8 @@ export default defineNuxtConfig({
   typescript: {
     shim: false
   },
-  modules: ['@nuxtjs/color-mode']
+  modules: ['@nuxtjs/color-mode'],
+  app: {
+    baseURL: "/homepage-k8s/"
+  }
 })
