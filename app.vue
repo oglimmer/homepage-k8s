@@ -59,7 +59,7 @@ const data = [
         title: "Traefik Ingress Controller",
         text: "Cloud Native Application Proxy",
         linkData: [
-            ["https://traefik.oglimmer.de/", "Dashboard"],
+            ["https://traefik.oglimmer.com/", "Dashboard"],
             ["https://traefik.io/traefik/", "Home page"],
         ],
         techList: "[k8s, traefik, reverse-proxy]",
