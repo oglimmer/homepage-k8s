@@ -35,14 +35,14 @@ watch(colorMode, (_) => {
 
 const data = [
     {
-        imageSrc: "./images/k8s.jpeg",
-        title: "Kubernetes Dashboard",
-        text: "General purpose UI for Kubernetes clusters.",
+        imageSrc: "./images/rancher.jpeg",
+        title: "Rancher",
+        text: "Container management UI for Kubernetes",
         linkData: [
-            ["https://k8s.oglimmer.com/", "Dashboard"],
-            ["https://github.com/kubernetes/dashboard", "Home page"],
+            ["https://minilinux.oglimmer.com/", "Dashboard"],
+            ["https://ranchermanager.docs.rancher.com/", "Documentation"],
         ],
-        techList: "[k8s, dashboard, kubernetes]",
+        techList: "[k8s, dashboard, rancher, management]",
     },
     {
         imageSrc: "./images/longhorn.jpeg",
