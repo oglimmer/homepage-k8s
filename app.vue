@@ -111,6 +111,13 @@ const data = [
         linkData: [["https://git-deploy-control.oglimmer.com/", "Dashboard"]],
         techList: "[k8s, continuous-deployment, git, deployment]",
     },
+    {
+        imageSrc: "./images/haproxy.jpeg",
+        title: "HAProxy",
+        text: "Network load balancer / layer 4 reverse proxy",
+        linkData: [["https://haproxy.oglimmer.com/", "Dashboard"],["https://www.haproxy.org/", "Home page"]],
+        techList: "[haproxy, reverse-proxy]",
+    },
 ];
 
 const transformArray = (arr: any) => {
