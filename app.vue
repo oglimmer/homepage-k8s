@@ -167,7 +167,7 @@ const switchColorMode = () => {
                 <div class="col-lg-8">
                     <h5 class="display-4 mb-4 font-weight-bold text-white">kubernetes @ oglimmer.com</h5>
                     <p class="h5 aa mb-4 pb-3 text-white-50">
-                        I manage a Kubernetes cluster with four nodes using Raspberry Pi hardware. It serves as a platform for my personal projects and
+                        I manage a Kubernetes cluster with five nodes using Raspberry Pi hardware. It serves as a platform for my personal projects and
                         facilitates my exploration of cloud-native technologies. Below are the services I employ to oversee and manage my Kubernetes setup.
                     </p>
                 </div>
