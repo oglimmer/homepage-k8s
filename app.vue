@@ -118,6 +118,13 @@ const data = [
         linkData: [["https://haproxy.oglimmer.com/", "Dashboard"],["https://www.haproxy.org/", "Home page"]],
         techList: "[haproxy, reverse-proxy]",
     },
+    {
+        imageSrc: "./images/backup.jpeg",
+        title: "Cloud-Backup",
+        text: "Custom build backup using Google Drive",
+        linkData: [["https://backup.oglimmer.com/", "Dashboard"]],
+        techList: "[backup, google-drive]",
+    },
 ];
 
 const transformArray = (arr: any) => {
