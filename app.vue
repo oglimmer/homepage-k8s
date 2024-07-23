@@ -125,6 +125,13 @@ const data = [
         linkData: [["https://backup.oglimmer.com/", "Dashboard"]],
         techList: "[backup, google-drive]",
     },
+    {
+        imageSrc: "./images/argocd.jpeg",
+        title: "Argo CD",
+        text: "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes",
+        linkData: [["https://argocd.oglimmer.com/", "Dashboard"]],
+        techList: "[k8s, continuous-deployment, git, deployment]",
+    },
 ];
 
 const transformArray = (arr: any) => {
