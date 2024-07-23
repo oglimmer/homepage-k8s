@@ -30,4 +30,5 @@ docker run -v $PWD:/usr/share/nginx/html -p 8080:80 nginx
 
 * find a picture
 * resize to 382x287
-* 
+* for FILE in *.jpeg; do ffmpeg -i "$FILE" -vf "scale='min(414,iw)':'-1'" -q:v 5 "${FILE%.jpg}_resized.jpg"; done
+
