@@ -35,7 +35,7 @@ watch(colorMode, (_) => {
 
 const data = [
     {
-        imageSrc: "./images/rancher.jpeg",
+        imageSrc: "rancher.jpeg",
         title: "Rancher",
         text: "Container management UI for Kubernetes",
         linkData: [
@@ -45,7 +45,7 @@ const data = [
         techList: "[k8s, dashboard, rancher, management]",
     },
     {
-        imageSrc: "./images/longhorn.jpeg",
+        imageSrc: "longhorn.jpeg",
         title: "Longhorn Persistent Storage",
         text: "Cloud native distributed block storage for Kubernetes",
         linkData: [
@@ -55,7 +55,7 @@ const data = [
         techList: "[k8s, longhorn, storage]",
     },
     {
-        imageSrc: "./images/traefik.jpeg",
+        imageSrc: "traefik.jpeg",
         title: "Traefik Ingress Controller",
         text: "Cloud Native Application Proxy",
         linkData: [
@@ -65,7 +65,7 @@ const data = [
         techList: "[k8s, traefik, reverse-proxy]",
     },
     {
-        imageSrc: "./images/registry.jpeg",
+        imageSrc: "registry.jpeg",
         title: "Container Registry",
         text: "Simple and secure container image registry",
         linkData: [
@@ -75,7 +75,7 @@ const data = [
         techList: "[k8s, docker, container-registry, container]",
     },
     {
-        imageSrc: "./images/grafana.jpeg",
+        imageSrc: "grafana.jpeg",
         title: "Grafana Monitoring",
         text: "The open platform for beautiful analytics and monitoring",
         linkData: [
@@ -85,7 +85,7 @@ const data = [
         techList: "[k8s, dashboard, monitoring, grafana, prometheus, loki]",
     },
     {
-        imageSrc: "./images/keel.jpeg",
+        imageSrc: "keel.jpeg",
         title: "Keel Continuous Deployment",
         text: "Automated Kubernetes deployment",
         linkData: [
@@ -95,7 +95,7 @@ const data = [
         techList: "[k8s, deployment, keel, continuous-deployment]",
     },
     {
-        imageSrc: "./images/maven.jpeg",
+        imageSrc: "maven.jpeg",
         title: "Maven Repository",
         text: "Maven based artifacts for JVM ecosystem",
         linkData: [
@@ -105,28 +105,28 @@ const data = [
         techList: "[k8s, mvn, maven, repository]",
     },
     {
-        imageSrc: "./images/git-deploy-control.jpeg",
+        imageSrc: "git-deploy-control.jpeg",
         title: "Release Management UI",
         text: "Custom build system for git based version control",
         linkData: [["https://git-deploy-control.oglimmer.com/", "Dashboard"]],
         techList: "[k8s, continuous-deployment, git, deployment]",
     },
     {
-        imageSrc: "./images/haproxy.jpeg",
+        imageSrc: "haproxy.jpeg",
         title: "HAProxy",
         text: "Network load balancer / layer 4 reverse proxy",
         linkData: [["https://haproxy.oglimmer.com/", "Dashboard"],["https://www.haproxy.org/", "Home page"]],
         techList: "[haproxy, reverse-proxy]",
     },
     {
-        imageSrc: "./images/backup.jpeg",
+        imageSrc: "backup.jpeg",
         title: "Cloud-Backup",
         text: "Custom build backup using Google Drive",
         linkData: [["https://backup.oglimmer.com/", "Dashboard"]],
         techList: "[backup, google-drive]",
     },
     {
-        imageSrc: "./images/argocd.jpeg",
+        imageSrc: "argocd.jpeg",
         title: "Argo CD",
         text: "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes",
         linkData: [["https://argocd.oglimmer.com/", "Dashboard"]],
@@ -147,6 +147,8 @@ const switchColorMode = () => {
     colorMode.preference = colorMode.value === "light" ? "dark" : "light";
     return false;
 };
+
+const graphics = ref("neon");
 </script>
 
 <template>
@@ -187,10 +189,22 @@ const switchColorMode = () => {
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-3">
+        <div class="d-flex justify-content-end">
+            <div class="me-2">Graphics:</div>
+            <div class="me-2">
+                <select v-model="graphics">
+                    <option value="neon">Neon</option>
+                    <option value="comic">Comic</option>
+                </select>
+            </div>
+        </div>
+     </div>
+
+    <div class="container">
         <div class="row mt-2" v-for="row in transformArray(data)">
             <div class="col-lg-4 mt-4" v-for="item in row">
-                <Project :image-src="item.imageSrc" :title="item.title" :text="item.text" :link-data="item.linkData" :tech-list="item.techList" />
+                <Project :image-src="`./images/${graphics}/${item.imageSrc}`" :title="item.title" :text="item.text" :link-data="item.linkData" :tech-list="item.techList" />
             </div>
         </div>
     </div>
