@@ -148,7 +148,7 @@ const switchColorMode = () => {
     return false;
 };
 
-const graphics = ref("neon");
+const graphics = ref("comic");
 </script>
 
 <template>
