@@ -45,6 +45,16 @@ const data = [
     //     techList: "[k8s, dashboard, rancher, management]",
     // },
     {
+        imageSrc: "rancher.jpeg",
+        title: "Keycloak",
+        text: "Identity and Access Management",
+        linkData: [
+            ["https://id.oglimmer.de/", "Admin"],
+            ["https://www.keycloak.org/", "Documentation"],
+        ],
+        techList: "[idp, oauth, saml, oidc, keycloak]",
+    },
+    {
         imageSrc: "longhorn.jpeg",
         title: "Longhorn Persistent Storage",
         text: "Cloud native distributed block storage for Kubernetes",
