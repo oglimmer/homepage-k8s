@@ -34,16 +34,16 @@ watch(colorMode, (_) => {
 });
 
 const data = [
-    {
-        imageSrc: "rancher.jpeg",
-        title: "Rancher",
-        text: "Container management UI for Kubernetes",
-        linkData: [
-            ["https://minilinux.oglimmer.com/", "Dashboard"],
-            ["https://ranchermanager.docs.rancher.com/", "Documentation"],
-        ],
-        techList: "[k8s, dashboard, rancher, management]",
-    },
+    // {
+    //     imageSrc: "rancher.jpeg",
+    //     title: "Rancher",
+    //     text: "Container management UI for Kubernetes",
+    //     linkData: [
+    //         ["https://minilinux.oglimmer.com/", "Dashboard"],
+    //         ["https://ranchermanager.docs.rancher.com/", "Documentation"],
+    //     ],
+    //     techList: "[k8s, dashboard, rancher, management]",
+    // },
     {
         imageSrc: "longhorn.jpeg",
         title: "Longhorn Persistent Storage",
@@ -84,16 +84,16 @@ const data = [
         ],
         techList: "[k8s, dashboard, monitoring, grafana, prometheus, loki]",
     },
-    {
-        imageSrc: "keel.jpeg",
-        title: "Keel Continuous Deployment",
-        text: "Automated Kubernetes deployment",
-        linkData: [
-            ["https://keel.oglimmer.com/", "Dashboard"],
-            ["https://keel.sh/", "Home page"],
-        ],
-        techList: "[k8s, deployment, keel, continuous-deployment]",
-    },
+    // {
+    //     imageSrc: "keel.jpeg",
+    //     title: "Keel Continuous Deployment",
+    //     text: "Automated Kubernetes deployment",
+    //     linkData: [
+    //         ["https://keel.oglimmer.com/", "Dashboard"],
+    //         ["https://keel.sh/", "Home page"],
+    //     ],
+    //     techList: "[k8s, deployment, keel, continuous-deployment]",
+    // },
     {
         imageSrc: "maven.jpeg",
         title: "Maven Repository",
